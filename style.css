@@ -6,7 +6,11 @@ body {
     margin: 0; 
     padding: 0; 
     box-sizing: border-box; 
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    transition: background 5s ease;
 } 
 
 /* Header Navbar Styles */
@@ -60,8 +64,6 @@ body {
 
 /* Main Hero Section Styles */
 .hero { 
-    background-image: url('./Images/YouTubeBanner.gif'); 
-    background-repeat: no-repeat; 
     background-size: 100% 100%; 
     width: 100%; 
     height: 100vh; 
@@ -87,9 +89,8 @@ body {
 .about { 
     display: flex; 
     align-items: center; 
-    background-image: linear-gradient(45deg, #363D73, #2794B3); 
     justify-content: space-between; 
-    width: 100%; 
+    width: 100%;
 } 
 
 .about .about-text { 
@@ -156,7 +157,6 @@ body {
     align-items: center; 
     justify-content: center; 
     border-radius: 20px; 
-    background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C); 
     padding: 1rem; 
 } 
 
@@ -346,3 +346,14 @@ html {
 	scroll-behavior: smooth;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
