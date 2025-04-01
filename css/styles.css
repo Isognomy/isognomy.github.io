@@ -227,6 +227,10 @@ html {
     color: white;
 }
 
+.contact a:hover {
+    color: darkgray;
+}
+
 .contact-img {
     display: flex;
     align-items: center;
@@ -267,6 +271,7 @@ footer {
 }
 
 .social-links a {
+    text-decoration: none;
     font-size: 1.5rem;
     transition: transform 0.3s ease;
 }
